@@ -37,18 +37,15 @@
       <main>
         <section>
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
           <form class="searchForm" action="" method="get">
             <span class="searchIcon">
               <img src="./images/icones/localisation.png" />
             </span>
             <input type="search" class="searchBar" id="search" />
             <button class="searchButton" id="searchButton">
-              Rechercher
-              <img
-                src="./images/icones/loupe.png"
-                class="loupeIcon"
-                style="display: none"
-              />
+                <p >Rechercher</p>
+                <i class=" fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
 
@@ -74,7 +71,31 @@
         </section>
 
         <div class="hebergements-and-populaires">
-          <section class="hebergements"></section>
+          <section class="hebergements">
+
+   <div class="hebergements-card">
+    <img src="./images/hebergements/fred-kleber.jpg" class="hebergements-img" />
+                    <div class="card-txt">
+                
+                      <h3 class="card-title">
+                        Hôtel du port
+                      </h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 52<span class="euro">€</span>
+                      </p>
+                      <div class="card-rating"> 
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                    </div>
+
+          </section>
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
@@ -128,8 +149,7 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
+                      <i class="fa-xs fa-solid fa-star neutral-star"
                         aria-hidden="true"
                       ></i>
                       <span class="sr-only">Note de 4 sur 5</span>
@@ -170,5 +190,6 @@
       </main>
       <footer></footer>
     </div>
+    <script src="https://kit.fontawesome.com/9786b10571.js" crossorigin="anonymous"></script>
   </body>
 </html>

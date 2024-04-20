@@ -5,21 +5,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 0px;
 }
 
 .logo {
   width: 100px;
+  margin: 20px 0 0 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-top: 0px;
 }
 
 .nav-links li {
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
   padding-top: 20px;
   position: relative;
   border-top: 2px solid transparent;
@@ -44,6 +46,7 @@
 
 .searchForm {
   display: flex;
+  margin: 20px 0 20px 0;
 }
 
 .searchIcon {
@@ -79,17 +82,17 @@
   padding: 5px 10px 5px 10px;
   margin: 0;
 }
+.searchButton i {
+  display: none;
+  color: white !important;
+}
 
-@media screen and (max-width: 768px) {
-  .searchButton {
-    width: 50px;
-    height: 50px;
-    text-indent: -9999px;
-    justify-content: center;
+@media screen and (max-width: 426px) {
+  .searchButton i {
+    display: flex;
   }
-
-  .loupeIcon {
-    display: block;
+  .searchButton p {
+    display: none;
   }
 }
 /****** Filters ***********/
@@ -124,6 +127,7 @@
 }
 
 /****** General ***********/
+
 * {
   font-family: 'Raleway', sans-serif;
 }
@@ -142,6 +146,14 @@ body {
   margin-top: 0px;
   display: flex;
   justify-content: center;
+}
+
+h3 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+p {
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .main-container {
@@ -182,6 +194,27 @@ a {
 
 .neutral-star {
   color: var(--main-bg-color);
+}
+
+.hebergements-card {
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.hebergements-img {
+  width: 100%;
+  height: 100px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  padding: 0;
+}
+
+.card-txt {
+  margin: 0;
+  padding: 0;
 }
 
 /****** Hebergements And Populaires ***********/
