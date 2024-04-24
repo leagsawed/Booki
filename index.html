@@ -35,14 +35,19 @@
       </header>
 
       <main>
-        <section>
+        <section class="searchSection">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
           <form class="searchForm" action="" method="get">
             <span class="searchIcon">
               <img src="./images/icones/localisation.png" />
             </span>
-            <input type="search" class="searchBar" id="search" />
+            <input
+              type="search"
+              class="searchBar"
+              id="search"
+              placeholder="Marseille, France"
+            />
             <button class="searchButton" id="searchButton">
               <p>Rechercher</p>
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -51,28 +56,30 @@
 
           <div class="searchFilters">
             <h2>Filtres</h2>
-            <div class="filters">
-              <img src="./images/icones/bill-blue.png" />
-              <span class="filterText">Économique</span>
-            </div>
-            <div class="filters">
-              <img src="./images/icones/famille-blue.png" />
-              <span class="filterText">Familial</span>
-            </div>
-            <div class="filters">
-              <img src="./images/icones/coeur-blue.png" />
-              <span class="filterText">Romantique</span>
-            </div>
-            <div class="filters">
-              <img src="./images/icones/flamme-blue.png" />
-              <span class="filterText">Nos pépites</span>
+            <div class="filtersContainer">
+              <div class="filters">
+                <img src="./images/icones/bill-blue.png" />
+                <div class="filterText">Économique</div>
+              </div>
+              <div class="filters">
+                <img src="./images/icones/famille-blue.png" />
+                <div class="filterText">Familial</div>
+              </div>
+              <div class="filters">
+                <img src="./images/icones/coeur-blue.png" />
+                <div class="filterText">Romantique</div>
+              </div>
+              <div class="filters">
+                <img src="./images/icones/flamme-blue.png" />
+                <div class="filterText">Nos pépites</div>
+              </div>
             </div>
           </div>
+          <div class="searchResult">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
         </section>
-        <div class="searchResult">
-          <i class="fa-solid fa-info"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
         <div class="hebergements-and-populaires">
           <section class="hebergements">
             <h2>Hébergements à Marseille</h2>
