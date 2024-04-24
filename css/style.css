@@ -3,7 +3,7 @@
 .header-container {
   margin-top: 0px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   padding: 0px 0px;
 }
@@ -11,6 +11,7 @@
 .logo {
   width: 100px;
   margin: 20px 0 0 0;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -44,27 +45,28 @@
 
 /****** Search ***********/
 
-.searchForm {
+.search-form {
   display: flex;
   margin: 20px 0 20px 0;
 }
 
-.searchIcon {
+.search-icon {
   background-color: #f2f2f2;
   border-radius: 1rem 0 0 1rem;
   width: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-.searchIcon img {
+.search-icon img {
   width: 50%;
   height: auto;
   margin: 10px 7px 10px 10px;
 }
 
-.searchBar {
+.search-bar {
   border-right: none;
   border-left: none;
   border-top: #f2f2f2 1px solid;
@@ -73,7 +75,7 @@
   margin: 0;
 }
 
-.searchButton {
+.search-button {
   background-color: #0065fc;
   border-width: 0;
   color: white;
@@ -81,8 +83,9 @@
   border-radius: 0 1rem 1rem 0;
   padding: 5px 10px 5px 10px;
   margin: 0;
+  cursor: pointer;
 }
-.searchButton i {
+.search-button i {
   display: none;
   color: white !important;
 }
@@ -92,22 +95,22 @@ input::placeholder {
 }
 
 @media screen and (max-width: 426px) {
-  .searchButton i {
+  .search-button i {
     display: flex;
     padding: 5px;
   }
-  .searchButton p {
+  .search-button p {
     display: none;
   }
 }
 /****** Filters ***********/
 
-.searchFilters {
+.search-filters {
   display: flex;
   align-items: center;
 }
 
-.searchFilters h2 {
+.search-filters h2 {
   margin: 0 10px 10px 0;
 }
 
@@ -119,6 +122,7 @@ input::placeholder {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 .filters img {
@@ -126,7 +130,7 @@ input::placeholder {
   margin: 0 0 0 5px;
 }
 
-.filterText {
+.filter-text {
   margin: 5px 5px 5px 5px;
   font-weight: bold;
 }
@@ -135,19 +139,19 @@ input::placeholder {
   background-color: #deebff;
 }
 
-.searchResult {
+.search-result {
   display: flex;
   align-items: center;
   gap: 5px;
   margin: 1rem 0 1rem 0;
 }
 
-.searchResult i {
+.search-result i {
   border: 2px solid #d9d9d9;
   padding: 5px;
   border-radius: 100%;
-  height: 2vw;
-  width: 2vw;
+  height: 20px;
+  width: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,6 +212,7 @@ a {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
 }
 
 .card img {
@@ -371,16 +376,20 @@ a {
 
 .footer a {
   padding: 5px 0 5px 0;
+  cursor: pointer;
 }
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
-  .searchFilters {
+  .search-filters {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .search-result {
+    margin-bottom: 1.5rem;
   }
 
   .hebergements-and-populaires {
@@ -414,7 +423,6 @@ a {
 
   .populaires {
     width: 100%;
-    margin-top: 50px;
   }
 
   .populaires-cards {
@@ -516,26 +524,26 @@ a {
   }
   /* Search */
 
-  .searchSection {
+  .search-section {
     margin: 1rem;
   }
 
-  .searchForm {
+  .search-form {
     width: 100%;
     justify-content: center;
     border-top: #f2f2f2 1px solid;
     border-bottom: #f2f2f2 1px solid;
     border-radius: 1rem;
   }
-  .searchIcon {
+  .search-icon {
     width: 66px;
     height: 43px;
   }
-  .searchBar {
+  .search-bar {
     width: 100%;
   }
 
-  .searchButton {
+  .search-button {
     border-radius: 1rem;
     width: 50px;
     height: 43px;
@@ -543,14 +551,14 @@ a {
   }
   /* Filters */
 
-  .searchFilters h2 {
+  .search-filters h2 {
     font-size: 18px;
   }
 
-  .filtersContainer {
+  .filters-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 19px;
   }
 
   .filters {
@@ -565,18 +573,18 @@ a {
     width: 15px;
   }
 
-  .filterText {
+  .filter-text {
     display: flex;
   }
 
-  .searchResult i {
-    height: 6vw;
-    width: 6vw;
+  .search-result i {
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     font-size: 12px;
   }
 
-  .searchResult p {
+  .search-result p {
     font-size: 13px;
   }
 
@@ -607,6 +615,7 @@ a {
   }
 
   /* Hebergements */
+
   .hebergements {
     background-color: white !important;
   }
@@ -644,5 +653,13 @@ a {
   .column {
     width: 100%;
     margin: 0 0 2rem 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .search-result i {
+    height: 15px;
+    width: 20px;
+    font-size: 12px;
   }
 }
