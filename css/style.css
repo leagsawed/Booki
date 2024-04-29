@@ -393,6 +393,10 @@ input::placeholder {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+  .header-container {
+    margin-bottom: 0;
+  }
+
   .search-filters {
     display: flex;
     flex-wrap: wrap;
